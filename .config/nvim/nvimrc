@@ -32,6 +32,10 @@ set nohlsearch
 set clipboard+=unnamedplus
 command! W :w
 
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 " CtrlP:
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'

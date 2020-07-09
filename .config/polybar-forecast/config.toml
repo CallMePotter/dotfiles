@@ -1,6 +1,5 @@
 # Register at https://openweathermap.org to get your API key
 # If you don't want to write your key here, you can delete this line and use the OWM_API_KEY environment variable instead
-api_key = "8d87b115b8da9c30a2d8df2e81547d20"
 
 # This is for Montreal, find your city at https://openweathermap.org
 # The id will be the last part of the URL
