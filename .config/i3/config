@@ -221,6 +221,7 @@ bindsym $mod+m exec --no-startup-id spotify
 bindsym $mod+t exec thunar
 bindsym $mod+p exec pamac-manager
 bindsym $mod+d exec rofi -show run -theme ~/.config/rofi/gruvbox-dark.rasi
+bindsym $mod+shift+p exec ~/.config/polybar/launch.sh
 
 exec_always xmodmap -e "clear lock" #disable caps lock switch
 exec_always xmodmap -e "keysym Caps_Lock = Escape" #set caps_lock as escape
@@ -230,7 +231,7 @@ exec --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --primary --m
 exec --no-startup-id picom
 exec --no-startup-id wal -R
 
-exec_always --no-startup-id autotiling
+exec --no-startup-id autotiling
 # exec_always --no-startup-id xrdb .config/Xresources
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
