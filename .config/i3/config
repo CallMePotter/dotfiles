@@ -231,9 +231,9 @@ exec --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --primary --m
 exec --no-startup-id picom
 exec --no-startup-id wal -R
 
-exec --no-startup-id autotiling
+exec_always --no-startup-id autotiling
 # exec_always --no-startup-id xrdb .config/Xresources
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+# exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 exec_always --no-startup-id xset s off
 exec_always --no-startup-id xset -dpms
