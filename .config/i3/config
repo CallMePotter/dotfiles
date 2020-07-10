@@ -221,7 +221,6 @@ gaps outer 3
 
 
 bindsym $mod+w exec firefox
-bindsym $mod+g exec alacritty -e gotop
 bindsym $mod+m exec --no-startup-id spotify
 bindsym $mod+t exec thunar
 bindsym $mod+p exec pamac-manager

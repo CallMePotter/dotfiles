@@ -1,6 +1,3 @@
-#!/bin/sh
-[[ -f ~/.config/zsh/.zshenv ]] && source ~/.config/zsh/.zshenv
-
 xset s off
 xset -dpms
 xset s noblank
