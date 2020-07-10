@@ -113,12 +113,15 @@ set $ws1 ""
 set $ws2 ""
 set $ws3 ""
 set $ws4 ""
-set $ws5 ""
+set $ws5 ""
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 ""
+set $ws11 ""
+
+
 workspace <workspace_id> output <monitor_id>
 
 # Setup workspaces
@@ -132,6 +135,7 @@ workspace $ws7 output $monitor_right
 workspace $ws8 output $monitor_right
 workspace $ws9 output $monitor_right
 workspace $ws10 output $monitor_left
+workspace $ws11 output $monitor_left
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -144,6 +148,7 @@ bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
+bindsym $mod+F6 workspace $ws11
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -233,8 +238,4 @@ exec --no-startup-id wal -R
 
 exec_always --no-startup-id autotiling
 # exec_always --no-startup-id xrdb .config/Xresources
-# exec_always --no-startup-id ~/.config/polybar/launch.sh
-
-exec_always --no-startup-id xset s off
-exec_always --no-startup-id xset -dpms
-exec_always --no-startup-id xset s noblank
+exec --no-startup-id ~/.config/polybar/launch.sh

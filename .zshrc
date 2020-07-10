@@ -50,6 +50,8 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 alias ls='ls --color=auto'
 alias nvim='nvim -u ~/.config/nvim/nvimrc'
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias i3config='nvim .config/i3/config'
+alias polybarconfig='nvim .config/polybar/config.ini'
 
 # Neofetch
 /opt/shell-color-scripts/colorscript.sh -e pacman
