@@ -61,6 +61,7 @@ network-manager-applet
 noto-fonts
 nvidia
 nvidia-lts
+nvidia-settings
 nvidia-utils
 openssh
 os-prober
