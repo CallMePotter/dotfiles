@@ -235,6 +235,8 @@ exec --no-startup-id lxqt-policykit-agent
 exec --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --mode 1920x1080 --pos 1920x88 --rotate normal
 exec --no-startup-id picom
 exec --no-startup-id wal -R
+exec --no-startup-id pacman -Qqen > .config/packages/packages.txt
+exec --no-startup-id pacman -Qqem > .config/packages/packages_aur.txt
 
 exec_always --no-startup-id autotiling
 # exec_always --no-startup-id xrdb .config/Xresources
