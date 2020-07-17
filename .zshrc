@@ -1,6 +1,6 @@
 # Enable colors and change prompt:
 autoload -U colors && colors
-PS1="%B%{$fg[white]%}[%{$fg[green]%}%n%{$fg[white]%}@%{$fg[green]%}%M %{$fg[white]%}%~%{$fg[white]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[white]%}[%{$fg[yellow]%}%n%{$fg[white]%}@%{$fg[yellow]%}%M %{$fg[white]%}%~%{$fg[white]%}]%{$reset_color%}$%b "
 
 # History in cache directory:
 HISTSIZE=10000
@@ -54,6 +54,9 @@ alias i3config='nvim .config/i3/config'
 alias polybarconfig='nvim .config/polybar/config.ini'
 alias piodir='cd ~/Projects/PlatformIO/'
 alias piorun='pio run --target upload'
+alias nvimrc='nvim ~/.config/nvim/nvimrc'
+alias zshrc='nvim ~/.zshrc'
+alias piomonitor='pio device monitor'
 
 
 # Neofetch

@@ -169,6 +169,7 @@ assign [class="Thunar"] $ws4
 assign [class="Pamac-manager"] $ws3
 assign [class="Tor Browser"] $ws1
 assign [class="Steam"] $ws5
+for_window [class="Steam"] floating enable
 for_window [class="Tor Browser"] floating enable
 for_window [class="minecraft-launcher"] floating enable
 for_window [class="Spotify"] move to workspace $ws10
