@@ -8,7 +8,6 @@ base
 binutils
 bison
 cmatrix
-code
 deepin-screenshot
 dhcpcd
 dialog
@@ -47,6 +46,7 @@ linux-lts
 linux-lts-headers
 lxappearance
 lxqt-policykit
+lynx
 m4
 make
 man-db
