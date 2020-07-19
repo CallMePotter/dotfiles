@@ -24,6 +24,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'kien/ctrlp.vim'
 Plug 'vim-scripts/Arduino-syntax-file'
+Plug 'ThePrimeagen/vim-be-good'
 call plug#end()
 
 set bg=light

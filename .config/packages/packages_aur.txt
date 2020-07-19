@@ -22,5 +22,6 @@ steam-fonts
 steam-idle-master-git
 ttf-weather-icons
 vim-plug
+xrestop
 yaourt
 yay-git
