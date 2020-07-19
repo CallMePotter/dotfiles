@@ -6,6 +6,7 @@ haguichi
 logmein-hamachi
 minecraft
 nerd-fonts-mononoki
+ntfd-bin
 ocs-url
 package-query
 pacman-auto-update

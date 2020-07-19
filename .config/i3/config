@@ -237,6 +237,7 @@ exec --no-startup-id picom
 exec --no-startup-id wal -R
 exec --no-startup-id pacman -Qqen > .config/packages/packages.txt
 exec --no-startup-id pacman -Qqem > .config/packages/packages_aur.txt
+exec --no-startup-id ntfd &
 
 exec_always --no-startup-id autotiling
 # exec_always --no-startup-id xrdb .config/Xresources
