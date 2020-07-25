@@ -4,7 +4,6 @@ gconf
 gotop
 haguichi
 logmein-hamachi
-minecraft
 nerd-fonts-mononoki
 ntfd-bin
 ocs-url
@@ -16,11 +15,10 @@ platformio
 polybar-git
 polybar-spotify-git
 shell-color-scripts
-spotify
-spotify-adblock-git
 st-luke-git
 steam-fonts
 steam-idle-master-git
+ttf-material-design-icons-git
 ttf-weather-icons
 vim-plug
 xrestop

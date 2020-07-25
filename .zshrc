@@ -57,6 +57,7 @@ alias piorun='pio run --target upload'
 alias nvimrc='nvim ~/.config/nvim/nvimrc'
 alias zshrc='nvim ~/.zshrc'
 alias piomonitor='pio device monitor'
+alias grep='grep --color=auto'
 
 
 # Neofetch

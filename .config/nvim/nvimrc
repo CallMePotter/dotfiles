@@ -25,6 +25,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'kien/ctrlp.vim'
 Plug 'vim-scripts/Arduino-syntax-file'
 Plug 'ThePrimeagen/vim-be-good'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 set bg=light
@@ -43,31 +44,31 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
 " Onedark
+
+
 let g:lightline = {
-	\ 'colorscheme': 'onedark',
-	\ 'component': {
-	\   'lineinfo': ' %3l:%-2v',
-	\ },
-	\ 'component_function': {
-	\   'readonly': 'LightlineReadonly',
-	\   'fugitive': 'LightlineFugitive'
-	\ },
-	\ 'separator': { 'left': "", 'right': "" },
-	\ 'subseparator': { 'left': "", 'right': "" }
-	\ }
+            \ 'colorscheme': 'onedark',
+            \ 'component': {
+            \   'lineinfo': ' %3l:%-2v',
+            \ },
+            \ 'component_function': {
+            \   'readonly': 'LightlineReadonly',
+            \   'fugitive': 'LightlineFugitive'
+            \ },
+            \ }
 function! LightlineReadonly()
-	return &readonly ? '' : ''
+    return &readonly ? '' : ''
 endfunction
 function! LightlineFugitive()
-	if exists('*FugitiveHead')
-		let branch = FugitiveHead()
-		return branch !=# '' ? ''.branch : ''
-	endif
-	return ''
+    if exists('*FugitiveHead')
+        let branch = FugitiveHead()
+        return branch !=# '' ? ''.branch : ''
+    endif
+    return ''
 endfunction
 
-colorscheme onedark
 
+colorscheme onedark
 autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
 
 autocmd BufNewFile,BufRead ~/Projects/PlatformIO/*.cpp set filetype=arduino
