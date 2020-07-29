@@ -1,6 +1,5 @@
 alacritty
 amd-ucode
-android-tools
 android-udev
 arandr
 autoconf
@@ -94,6 +93,8 @@ thunar
 torbrowser-launcher
 transmission-gtk
 ufw
+unzip
+usb_modeswitch
 vim
 virtualbox
 w3m
