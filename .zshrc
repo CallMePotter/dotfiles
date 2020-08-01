@@ -48,6 +48,8 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 # Load aliases and shortcuts if existent.
 alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+
 alias nvim='nvim -u ~/.config/nvim/nvimrc'
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias i3config='nvim .config/i3/config'
@@ -57,8 +59,6 @@ alias piorun='pio run --target upload'
 alias nvimrc='nvim ~/.config/nvim/nvimrc'
 alias zshrc='nvim ~/.zshrc'
 alias piomonitor='pio device monitor'
-alias grep='grep --color=auto'
-
 
 # Neofetch
 /opt/shell-color-scripts/colorscript.sh -e pacman
