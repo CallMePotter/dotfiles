@@ -58,6 +58,10 @@ alias piodir='cd ~/Projects/PlatformIO/'
 alias piorun='pio run --target upload'
 alias piomonitor='pio device monitor'
 
+alias i3config='nvim .config/i3/config'
+alias zshrc='nvim .zshrc'
+alias nvimrc='nvim .config/nvim/nvimrc'
+
 # Neofetch
 /opt/shell-color-scripts/colorscript.sh -e pacman
 

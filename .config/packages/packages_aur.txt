@@ -4,6 +4,7 @@ gconf
 gotop
 haguichi
 logmein-hamachi
+minecraft
 nerd-fonts-mononoki
 ntfd-bin
 ocs-url

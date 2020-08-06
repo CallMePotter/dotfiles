@@ -124,9 +124,11 @@ assign [class="Thunar"] $ws4
 assign [class="Pamac-manager"] $ws3
 assign [class="Tor Browser"] $ws1
 assign [class="Steam"] $ws5
+
 for_window [class="Steam"] floating enable
 for_window [class="Tor Browser"] floating enable
 for_window [class="minecraft-launcher"] floating enable
+for_window [class="Minecraft*"] floating enable
 for_window [class="Spotify"] move to workspace $ws10
 
 ##########################################
@@ -145,5 +147,5 @@ exec --no-startup-id picom
 exec --no-startup-id pacman -Qqen > .config/packages/packages.txt
 exec --no-startup-id pacman -Qqem > .config/packages/packages_aur.txt
 exec --no-startup-id ntfd &
-exec --no-startup-id ~/flowy/bin -d ~/.config/flowy/austria
+exec --no-startup-id flowy -d ~/.config/flowy/austria
 exec --no-startup-id ~/.config/polybar/launch.sh

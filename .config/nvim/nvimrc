@@ -1,4 +1,4 @@
-let mapleader = "\\"
+let mapleader = " "
 
 if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autoload/plug.vim"'))
 	echo "Downloading junegunn/vim-plug to manage plugins..."
@@ -8,24 +8,15 @@ if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autolo
 endif
 
 call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
-Plug 'tpope/vim-surround'
-Plug 'preservim/nerdtree'
-Plug 'junegunn/goyo.vim'
-Plug 'PotatoesMaster/i3-vim-syntax'
-Plug 'jreybert/vimagit'
-Plug 'lukesmithxyz/vimling'
-Plug 'vimwiki/vimwiki'
-Plug 'tpope/vim-commentary'
-Plug 'kovetskiy/sxhkd-vim'
-Plug 'ap/vim-css-color'
-Plug 'itchyny/lightline.vim'
-Plug 'takac/vim-hardtime'
-Plug 'joshdick/onedark.vim'
-Plug 'sheerun/vim-polyglot'
-Plug 'kien/ctrlp.vim'
-Plug 'vim-scripts/Arduino-syntax-file'
-Plug 'ThePrimeagen/vim-be-good'
-Plug 'jiangmiao/auto-pairs'
+    Plug 'preservim/nerdtree'
+    Plug 'PotatoesMaster/i3-vim-syntax'
+    Plug 'tpope/vim-commentary'
+    Plug 'ap/vim-css-color'
+    Plug 'itchyny/lightline.vim'
+    Plug 'joshdick/onedark.vim'
+    Plug 'sheerun/vim-polyglot'
+    Plug 'vim-scripts/Arduino-syntax-file'
+    Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 set bg=light
@@ -39,13 +30,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-" CtrlP:
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-
-" Onedark
-
-
+" Onedark:
 let g:lightline = {
             \ 'colorscheme': 'onedark',
             \ 'component': {
@@ -69,16 +54,9 @@ endfunction
 
 
 colorscheme onedark
+
 autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
-
 autocmd BufNewFile,BufRead ~/Projects/PlatformIO/*.cpp set filetype=arduino
-
-"" Hardtime:
-"	let g:hardtime_default_on = 1
-"    let g:list_of_normal_keys = ["h", "j", "k", "l", "-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
-"    let g:list_of_visual_keys = ["h", "j", "k", "l", "-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
-"    let g:list_of_insert_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
-"    let g:list_of_disabled_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>", "<BS>"]
 
 " Some basics:
 	nnoremap c "_c
@@ -87,12 +65,12 @@ autocmd BufNewFile,BufRead ~/Projects/PlatformIO/*.cpp set filetype=arduino
 	syntax on
 	set encoding=utf-8
 	set number relativenumber
+
 " Enable autocompletion:
 	set wildmode=longest,list,full
+
 " Disables automatic commenting on newline:
 	autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-" Goyo plugin makes text more readable when writing prose:
-	map <leader>f :Goyo \| set bg=light \| set linebreak<CR>
 
 " Spell-check set to <leader>o, 'o' for 'orthography':
 	map <leader>o :setlocal spell! spelllang=en_us<CR>
@@ -109,13 +87,6 @@ autocmd BufNewFile,BufRead ~/Projects/PlatformIO/*.cpp set filetype=arduino
          let NERDTreeBookmarksFile = '~/.vim' . '/NERDTreeBookmarks'
      endif
 
-" vimling:
-	nm <leader>d :call ToggleDeadKeys()<CR>
-	imap <leader>d <esc>:call ToggleDeadKeys()<CR>a
-	nm <leader>i :call ToggleIPA()<CR>
-	imap <leader>i <esc>:call ToggleIPA()<CR>a
-	nm <leader>q :call ToggleProse()<CR>
-
 " Shortcutting split navigation, saving a keypress:
 	map <C-h> <C-w>h
 	map <C-j> <C-w>j
@@ -128,18 +99,8 @@ autocmd BufNewFile,BufRead ~/Projects/PlatformIO/*.cpp set filetype=arduino
 " Check file in shellcheck:
 	map <leader>s :!clear && shellcheck %<CR>
 
-" Open my bibliography file in split
-	map <leader>b :vsp<space>$BIB<CR>
-	map <leader>r :vsp<space>$REFER<CR>
-
 " Replace all is aliased to S.
 	nnoremap S :%s//g<Left><Left>
-
-" Compile document, be it groff/LaTeX/markdown/etc.
-	map <leader>c :w! \| !compiler <c-r>%<CR>
-
-" Open corresponding .pdf/.html or preview
-	map <leader>p :!opout <c-r>%<CR><CR>
 
 " Runs a script that cleans out tex build files whenever I close out of a .tex file.
 	autocmd VimLeave *.tex !texclear %
@@ -154,12 +115,6 @@ autocmd BufNewFile,BufRead ~/Projects/PlatformIO/*.cpp set filetype=arduino
 
 " Save file as sudo on files that require root permission
 	cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
-
-" Enable Goyo by default for mutt writting
-	autocmd BufRead,BufNewFile /tmp/neomutt* let g:goyo_width=80
-	autocmd BufRead,BufNewFile /tmp/neomutt* :Goyo | set bg=light
-	autocmd BufRead,BufNewFile /tmp/neomutt* map ZZ :Goyo\|x!<CR>
-	autocmd BufRead,BufNewFile /tmp/neomutt* map ZQ :Goyo\|q!<CR>
 
 " Automatically deletes all trailing whitespace and newlines at end of file on save.
 	autocmd BufWritePre * %s/\s\+$//e
