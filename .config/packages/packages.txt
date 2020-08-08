@@ -1,7 +1,7 @@
 alacritty
 amd-ucode
-android-udev
 arandr
+archivetools
 autoconf
 automake
 base
@@ -19,6 +19,7 @@ dosfstools
 fakeroot
 feh
 file
+file-roller
 findutils
 firefox
 flex
@@ -38,9 +39,6 @@ gzip
 hardinfo
 htop
 i3-gaps
-i3blocks
-i3lock
-i3status
 jq
 libpng12
 libtool
@@ -51,7 +49,6 @@ linux-headers
 linux-lts
 linux-lts-headers
 lxappearance
-lxqt-policykit
 lynx
 m4
 make
@@ -85,7 +82,6 @@ python-pywal
 ranger
 renameutils
 rofi
-rust
 rxvt-unicode
 sed
 steam
@@ -95,13 +91,12 @@ telegram-desktop
 texinfo
 thunar
 torbrowser-launcher
+transmission-cli
 transmission-gtk
-ufw
+ttf-font-awesome
 unzip
-usb_modeswitch
 vim
 virtualbox
-w3m
 wget
 which
 wireless_tools
@@ -111,6 +106,7 @@ xdo
 xf86-video-vesa
 xf86-video-vmware
 xorg-docs
+xorg-font-util
 xorg-iceauth
 xorg-luit
 xorg-server
