@@ -6,6 +6,16 @@ set $mod Mod4
 #                                        #
 ##########################################
 
+# class                 border  backgr. text    indicator child_border
+client.focused          #ababab #000000 #000000 #ababab    #ababab
+client.focused_inactive #000000  #000000 #000000 #000000   #000000
+client.unfocused        #000000 #000000 #000000 #000000   #000000
+client.urgent           #000000 #000000 #000000 #000000   #000000
+client.placeholder      #000000 #000000 #000000 #000000   #000000
+
+client.background       #ffffff
+
+
 mode "resize" {
         bindsym h resize shrink width 10 px or 10 ppt
         bindsym j resize grow height 10 px or 10 ppt
@@ -20,7 +30,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 hide_edge_borders both
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1
 gaps inner 3
 gaps outer 3
 
