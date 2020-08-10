@@ -12,7 +12,6 @@ pip-tools
 platformio
 polybar-git
 polybar-spotify-git
-shell-color-scripts
 st-luke-git
 steam-fonts
 steam-idle-master-git

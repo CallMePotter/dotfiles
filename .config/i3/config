@@ -60,7 +60,6 @@ floating_modifier $mod
 
 bindsym $mod+w exec firefox
 bindsym $mod+m exec --no-startup-id spotify
-bindsym $mod+t exec thunar
 bindsym $mod+d exec rofi -show run -theme ~/.config/rofi/gruvbox-dark.rasi
 bindsym $mod+shift+p exec ~/.config/polybar/launch.sh
 bindsym $mod+Return exec alacritty
@@ -77,14 +76,14 @@ bindsym $mod+Shift+e exec ~/.config/i3/exit_menu.sh
 
 set $ws1 ""
 set $ws2 ""
-set $ws3 ""
-set $ws4 ""
-set $ws5 ""
+set $ws3 ""
+set $ws4 "4"
+set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 ""
+set $ws10 ""
 set $ws11 ""
 
 set $monitor_left HDMI-0
@@ -128,19 +127,13 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 assign [class="firefox"] $ws1
-assign [class="mpv"] $ws10
-assign [class="Alacritty"] $ws2
-assign [class="code-oss"] $ws3
-assign [class="Thunar"] $ws4
-assign [class="Pamac-manager"] $ws3
 assign [class="Tor Browser"] $ws1
-assign [class="Steam"] $ws5
+assign [class="Alacritty"] $ws2
+assign [class="Steam"] $ws3
+assign [class="mpv"] $ws10
 
 for_window [class="Steam"] floating enable
 for_window [class="Tor Browser"] floating enable
-for_window [class="minecraft-launcher"] floating enable
-for_window [class="Minecraft*"] floating enable
-for_window [class="Spotify"] move to workspace $ws10
 
 ##########################################
 #                                        #
@@ -150,6 +143,7 @@ for_window [class="Spotify"] move to workspace $ws10
 
 exec_always xmodmap -e "clear lock" #disable caps lock switch
 exec_always xmodmap -e "keysym Caps_Lock = Escape" #set caps_lock as escape
+
 exec_always --no-startup-id autotiling
 
 exec --no-startup-id xrandr --output HDMI-0 --primary --mode 1920x1080 --pos 0x0 --output DP-1 --mode 1920x1080 --pos 1920x88

@@ -19,7 +19,6 @@ dosfstools
 fakeroot
 feh
 file
-file-roller
 findutils
 firefox
 flex
@@ -89,7 +88,6 @@ sudo
 teamspeak3
 telegram-desktop
 texinfo
-thunar
 torbrowser-launcher
 transmission-cli
 transmission-gtk
