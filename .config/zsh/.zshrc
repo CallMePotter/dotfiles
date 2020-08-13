@@ -51,5 +51,11 @@ zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
+# If the .xsession-errors file is not a symbolic link, delete it and create it as such
+if [ ! -h $HOME/.xsession-errors ]; then
+ /bin/rm $HOME/.xsession-errors
+ ln -s /dev/null $HOME/.xsession-errors
+fi
+
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null

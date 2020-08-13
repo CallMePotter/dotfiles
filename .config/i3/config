@@ -152,5 +152,5 @@ exec --no-startup-id picom
 exec --no-startup-id pacman -Qqen > .config/packages/packages.txt
 exec --no-startup-id pacman -Qqem > .config/packages/packages_aur.txt
 exec --no-startup-id ntfd &
-exec --no-startup-id wal -stei ~/Pictures/Wallpapers/Etc/wall.png
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/Etc/wall.png
 exec --no-startup-id ~/.config/polybar/launch.sh

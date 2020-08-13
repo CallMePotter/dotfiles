@@ -77,7 +77,6 @@ pkgconf
 portmidi
 powerline-fonts
 python-pygame
-python-pywal
 ranger
 renameutils
 rofi
