@@ -1,0 +1,22 @@
+#!/bin/sh
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias yay='yay --color=auto'
+
+alias nvim='nvim -u ~/.config/nvim/nvimrc'
+
+alias tutorial='cd ~/Projects/PlatformIO/tutorial/'
+alias piodir='cd ~/Projects/PlatformIO/'
+alias piorun='pio run --target upload'
+alias piomonitor='pio device monitor'
+
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+
+alias i3config='nvim ~/.config/i3/config'
+alias zshrc='nvim ~/.config/zsh/.zshrc'
+alias nvimrc='nvim ~/.config/nvim/nvimrc'
+alias polybarconfig='nvim ~/.config/polybar/config.ini'
+
+alias aliases='nvim ~/.config/aliasrc'
+alias zshenv='nvim ~/.config/env'
