@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Add ~/.local/bin to $PATH
+export PATH=$PATH:/home/potter/.local/bin
+
+
+# ~/ clean-up:
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+
+export LESSHISTFILE="-"
+export GNUPGHOME="$XDG_DATA_HOME/gnupg"
+export GRADLE_USER_HOME="$XDG_DATA_HOME/gradle"
+
+export CUDA_CACHE_PATH="$XDG_CACHE_HOME/nv"
+
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"

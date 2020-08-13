@@ -16,6 +16,7 @@ dhcpcd
 dialog
 dmenu
 dosfstools
+evince
 fakeroot
 feh
 file
@@ -48,7 +49,6 @@ linux-headers
 linux-lts
 linux-lts-headers
 lxappearance
-lynx
 m4
 make
 man-db
@@ -88,6 +88,18 @@ sudo
 teamspeak3
 telegram-desktop
 texinfo
+texlive-bibtexextra
+texlive-core
+texlive-fontsextra
+texlive-formatsextra
+texlive-games
+texlive-humanities
+texlive-latexextra
+texlive-music
+texlive-pictures
+texlive-pstricks
+texlive-publishers
+texlive-science
 torbrowser-launcher
 transmission-cli
 transmission-gtk

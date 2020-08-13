@@ -1,5 +1,7 @@
 set $mod Mod4
 
+exec source ~/.zshenv
+
 ##########################################
 #                                        #
 #                  Windows               #
@@ -7,7 +9,7 @@ set $mod Mod4
 ##########################################
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #ababab #000000 #000000 #ababab    #ababab
+client.focused          #ffffff #000000 #000000 #ffffff    #ffffff
 client.focused_inactive #000000  #000000 #000000 #000000   #000000
 client.unfocused        #000000 #000000 #000000 #000000   #000000
 client.urgent           #000000 #000000 #000000 #000000   #000000
@@ -59,7 +61,6 @@ floating_modifier $mod
 ##########################################
 
 bindsym $mod+w exec firefox
-bindsym $mod+m exec --no-startup-id spotify
 bindsym $mod+d exec rofi -show run -theme ~/.config/rofi/gruvbox-dark.rasi
 bindsym $mod+shift+p exec ~/.config/polybar/launch.sh
 bindsym $mod+Return exec alacritty
@@ -151,5 +152,5 @@ exec --no-startup-id picom
 exec --no-startup-id pacman -Qqen > .config/packages/packages.txt
 exec --no-startup-id pacman -Qqem > .config/packages/packages_aur.txt
 exec --no-startup-id ntfd &
-exec --no-startup-id flowy -d ~/.config/flowy/lake
+exec --no-startup-id wal -stei ~/Pictures/Wallpapers/Etc/wall.png
 exec --no-startup-id ~/.config/polybar/launch.sh

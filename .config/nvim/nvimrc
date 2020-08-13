@@ -16,7 +16,6 @@ call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"
     Plug 'joshdick/onedark.vim'
     Plug 'sheerun/vim-polyglot'
     Plug 'vim-scripts/Arduino-syntax-file'
-    Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 set bg=light
@@ -92,6 +91,9 @@ autocmd BufNewFile,BufRead ~/Projects/PlatformIO/*.cpp set filetype=arduino
 	map <C-j> <C-w>j
 	map <C-k> <C-w>k
 	map <C-l> <C-w>l
+
+" Compile document, be it groff/LaTeX/markdown/etc.
+	map <leader>c :w! \| !compiler <c-r>%<CR>
 
 " Replace ex mode with gq
 	map Q gq
