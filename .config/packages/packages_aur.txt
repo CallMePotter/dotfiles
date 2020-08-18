@@ -1,12 +1,10 @@
 autotiling
 gotop
-haguichi
-logmein-hamachi
 nerd-fonts-mononoki
 ntfd-bin
 pip-tools
 platformio
-polybar-git
+polybar
 steam-fonts
 ttf-weather-icons
 yay

@@ -63,6 +63,7 @@ floating_modifier $mod
 bindsym $mod+w exec firefox
 bindsym $mod+d exec rofi -show run -theme ~/.config/rofi/gruvbox-dark.rasi
 bindsym $mod+shift+p exec ~/.config/polybar/launch.sh
+bindsym $mod+shift+w exec alacritty --hold -e curl wttr.in/Krasnouralsk
 bindsym $mod+Return exec alacritty
 
 bindsym $mod+Shift+c reload
@@ -129,11 +130,13 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 assign [class="firefox"] $ws1
 assign [class="Tor Browser"] $ws1
+assign [class="listener"] $ws1
 assign [class="Alacritty"] $ws2
 assign [class="Steam"] $ws3
 assign [class="mpv"] $ws10
 
 for_window [class="Steam"] floating enable
+for_window [class="TelegramDesktop"] floating enable
 for_window [class="Tor Browser"] floating enable
 
 ##########################################
@@ -151,6 +154,5 @@ exec --no-startup-id xrandr --output HDMI-0 --primary --mode 1920x1080 --pos 0x0
 exec --no-startup-id picom
 exec --no-startup-id pacman -Qqen > .config/packages/packages.txt
 exec --no-startup-id pacman -Qqem > .config/packages/packages_aur.txt
-exec --no-startup-id ntfd &
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/Etc/wall.png
+exec --no-startup-id feh --bg-fill Wallpaper/Unsorted/1490469583312.jpg
 exec --no-startup-id ~/.config/polybar/launch.sh
