@@ -10,7 +10,6 @@ bind
 binutils
 bison
 calc
-deepin-screenshot
 dhcpcd
 dialog
 dmenu
@@ -52,7 +51,6 @@ lxappearance
 m4
 make
 man-db
-mlocate
 mpd
 mpv
 mtools
@@ -76,7 +74,6 @@ pavucontrol
 picom
 pkgconf
 portmidi
-powerline-fonts
 python-pygame
 ranger
 renameutils

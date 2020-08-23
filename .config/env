@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Add ~/.local/bin to $PATH
-export PATH=$PATH:/home/potter/.local/bin
+export PATH=$PATH:$HOME/.local/bin
 
 # ~/ clean-up:
 export ZDOTDIR=$HOME/.config/zsh
