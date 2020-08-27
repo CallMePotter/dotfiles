@@ -5,9 +5,6 @@ alias grep='grep --color=auto'
 alias yay='yay --color=auto'
 alias pacman='pacman --color=auto'
 
-alias nvim='nvim -u ~/.config/nvim/nvimrc'
-alias sudonvim='sudo nvim -u ~/.config/nvim/nvimrc'
-
 alias tutorial='cd ~/Projects/PlatformIO/tutorial/'
 alias piodir='cd ~/Projects/PlatformIO/'
 alias piorun='pio run --target upload'

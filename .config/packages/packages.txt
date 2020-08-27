@@ -54,7 +54,6 @@ man-db
 mpd
 mpv
 mtools
-nano
 ncdu
 neofetch
 neovim
