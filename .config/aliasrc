@@ -14,7 +14,7 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 alias i3config='nvim ~/.config/i3/config'
 alias zshrc='nvim ~/.config/zsh/.zshrc'
-alias nvimrc='nvim ~/.config/nvim/nvimrc'
+alias nvimrc='nvim ~/.config/nvim/init.vim'
 alias polybarconfig='nvim ~/.config/polybar/config.ini'
 
 alias aliases='nvim ~/.config/aliasrc'

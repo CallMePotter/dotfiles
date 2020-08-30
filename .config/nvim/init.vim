@@ -30,6 +30,7 @@ set shiftwidth=4
 set expandtab
 
 " Onedark:
+
 let g:lightline = {
             \ 'colorscheme': 'onedark',
             \ 'component': {

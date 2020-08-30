@@ -1,6 +1,6 @@
 autotiling
 gotop
-nerd-fonts-mononoki
+nerd-fonts-ubuntu-mono
 pip-tools
 platformio
 polybar
