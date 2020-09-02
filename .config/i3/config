@@ -9,7 +9,7 @@ exec source ~/.zshenv
 ##########################################
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #ffffff #000000 #000000 #ffffff    #ffffff
+client.focused          #606060 #000000 #000000 #606060    #606060
 client.focused_inactive #000000  #000000 #000000 #000000   #000000
 client.unfocused        #000000 #000000 #000000 #000000   #000000
 client.urgent           #000000 #000000 #000000 #000000   #000000
@@ -69,6 +69,8 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec ~/.config/i3/exit_menu.sh
+
+bindsym Print exec flameshot screen -p ~/Screenshots
 
 ##########################################
 #                                        #

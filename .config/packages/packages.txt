@@ -32,7 +32,6 @@ grep
 groff
 grub
 grub-customizer
-gthumb
 gzip
 hardinfo
 htop
