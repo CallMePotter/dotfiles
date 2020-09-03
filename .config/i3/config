@@ -150,10 +150,10 @@ for_window [class="Tor Browser"] floating enable
 # exec_always xmodmap -e "keysym Caps_Lock = Escape" #set caps_lock as escape
 
 exec_always --no-startup-id autotiling
+exec_always --no-startup-id feh --bg-fill ~/Wallpaper/wall
 
 exec --no-startup-id xrandr --output HDMI-0 --primary --mode 1920x1080 --pos 0x0 --output DP-1 --mode 1920x1080 --pos 1920x88
 exec --no-startup-id picom
 exec --no-startup-id pacman -Qqen > .config/packages/packages.txt
 exec --no-startup-id pacman -Qqem > .config/packages/packages_aur.txt
-exec --no-startup-id feh --bg-fill Wallpaper/Unsorted/1490469583312.jpg
 exec --no-startup-id ~/.config/polybar/launch.sh
