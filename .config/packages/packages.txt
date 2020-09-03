@@ -67,6 +67,7 @@ nvidia-settings
 nvidia-utils
 openssh
 os-prober
+pacgraph
 pacman
 pacman-contrib
 patch
