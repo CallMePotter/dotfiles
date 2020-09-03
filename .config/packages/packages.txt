@@ -42,8 +42,6 @@ jre8-openjdk
 jre8-openjdk-headless
 libpng12
 libtool
-lightdm
-lightdm-gtk-greeter
 linux
 linux-headers
 linux-lts
