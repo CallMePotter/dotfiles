@@ -16,6 +16,7 @@ dialog
 dmenu
 dosfstools
 fakeroot
+fbset
 feh
 file
 findutils
@@ -47,6 +48,7 @@ linux-headers
 linux-lts
 linux-lts-headers
 lxappearance
+lynx
 m4
 make
 man-db
@@ -88,7 +90,6 @@ transmission-cli
 transmission-gtk
 ueberzug
 unzip
-vim
 virtualbox
 wget
 which
