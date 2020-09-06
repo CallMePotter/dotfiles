@@ -51,6 +51,8 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 bindsym $mod+q kill
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
 
 floating_modifier $mod
 
@@ -64,8 +66,6 @@ bindsym $mod+w exec firefox
 bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+shift+p exec ~/.config/polybar/launch.sh
 bindsym $mod+Return exec alacritty
-bindsym $mod+Shift+c reload
-bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec ~/.config/i3/menu.sh
 
 bindsym Print exec flameshot screen -p ~/Screenshots
@@ -147,7 +147,7 @@ for_window [class="Tor Browser"] floating enable
 exec_always --no-startup-id autotiling
 exec_always --no-startup-id feh --bg-fill ~/Wallpaper/wall
 
-exec --no-startup-id xrandr --output HDMI-0 --primary --mode 1920x1080 --pos 0x0 --left-of DP-1 --output DP-1 --mode 1920x1080 --pos 1920x88 --right-of HDMI-0
+exec --no-startup-id xrandr --output HDMI-0 --primary --mode 1920x1080 --output DP-1 --mode 1920x1080
 exec --no-startup-id picom
 exec --no-startup-id pacman -Qqen > .config/packages/packages.txt
 exec --no-startup-id pacman -Qqem > .config/packages/packages_aur.txt
