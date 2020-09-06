@@ -78,7 +78,6 @@ portmidi
 python-pygame
 ranger
 renameutils
-rofi
 rxvt-unicode
 sed
 steam
@@ -98,6 +97,7 @@ wireless_tools
 wmctrl
 wpa_supplicant
 xdo
+xdotool
 xf86-video-vesa
 xf86-video-vmware
 xorg-docs
