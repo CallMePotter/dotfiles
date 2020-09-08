@@ -9,11 +9,11 @@ endif
 
 call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
     Plug 'preservim/nerdtree'
+    Plug 'sainnhe/gruvbox-material'
     Plug 'PotatoesMaster/i3-vim-syntax'
     Plug 'tpope/vim-commentary'
     Plug 'ap/vim-css-color'
     Plug 'itchyny/lightline.vim'
-    Plug 'joshdick/onedark.vim'
     Plug 'sheerun/vim-polyglot'
     Plug 'vim-scripts/Arduino-syntax-file'
 call plug#end()
@@ -29,31 +29,27 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-" Onedark:
+" gruvbox:
 
-let g:lightline = {
-            \ 'colorscheme': 'onedark',
-            \ 'component': {
-            \   'lineinfo': ' %3l:%-2v',
-            \ },
-            \ 'component_function': {
-            \   'readonly': 'LightlineReadonly',
-            \   'fugitive': 'LightlineFugitive'
-            \ },
-            \ }
-function! LightlineReadonly()
-    return &readonly ? '' : ''
-endfunction
-function! LightlineFugitive()
-    if exists('*FugitiveHead')
-        let branch = FugitiveHead()
-        return branch !=# '' ? ''.branch : ''
-    endif
-    return ''
-endfunction
+if has('termguicolors')
+    set termguicolors
+endif
+
+" For dark version.
+set background=dark
+
+" Set contrast.
+" This configuration option should be placed before `colorscheme gruvbox-material`.
+" Available values: 'hard', 'medium'(default), 'soft'
+let g:gruvbox_material_background = 'medium'
+
+colorscheme gruvbox-material
+
+let g:lightline = {}
+let g:lightline.colorscheme = 'gruvbox_material'
 
 
-colorscheme onedark
+" Arduino:
 
 autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
 autocmd BufNewFile,BufRead ~/Projects/PlatformIO/*.cpp set filetype=arduino

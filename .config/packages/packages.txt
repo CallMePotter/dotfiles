@@ -18,6 +18,7 @@ dosfstools
 fakeroot
 fbset
 feh
+figlet
 file
 findutils
 firefox
