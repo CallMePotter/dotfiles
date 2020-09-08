@@ -1,21 +1,33 @@
 #!/bin/sh
 
+# color
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias yay='yay --color=auto'
 alias pacman='pacman --color=auto'
 
+# platformio
 alias tutorial='cd ~/Projects/PlatformIO/tutorial/'
 alias piodir='cd ~/Projects/PlatformIO/'
 alias piorun='pio run --target upload'
 alias piomonitor='pio device monitor'
 
+# dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
-alias i3config='nvim ~/.config/i3/config'
-alias zshrc='nvim ~/.config/zsh/.zshrc'
-alias nvimrc='nvim ~/.config/nvim/init.vim'
-alias polybarconfig='nvim ~/.config/polybar/config.ini'
+# suckless
+alias strc='nvim ~/.config/st/config.def.h'
+alias dwmrc='nvim ~/.config/dwm/config.def.h'
+alias xinitrc='nvim ~/.config/polybar/config.ini'
 
+# neovim
+alias nvimrc='nvim ~/.config/nvim/init.vim'
+
+# i3
+alias i3rc='nvim ~/.config/i3/config'
+alias polybarrc='nvim ~/.config/polybar/config.ini'
+
+# zsh
+alias zshrc='nvim ~/.config/zsh/.zshrc'
 alias aliases='nvim ~/.config/aliasrc'
 alias zshenv='nvim ~/.config/env'

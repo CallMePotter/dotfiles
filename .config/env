@@ -4,6 +4,7 @@ export EDITOR=nvim
 
 # Add ~/.local/bin to $PATH
 export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.local/scripts
 
 # ~/ clean-up:
 export ZDOTDIR=$HOME/.config/zsh
