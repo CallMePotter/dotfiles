@@ -2,8 +2,13 @@ xset s off
 xset -dpms
 xset s noblank
 
-xsetroot -name ""
+while xsetroot -name "`date` `uptime | sed 's/.*,//'`"
+      do
+      sleep 1
+      done &
+      exec dwm
 
 exec i3
+
 /* exec startdwm */
 /* exec dwm */
