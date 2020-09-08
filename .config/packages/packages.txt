@@ -2,6 +2,7 @@ alacritty
 amd-ucode
 arandr
 archivetools
+asciidoc
 atool
 autoconf
 automake
@@ -89,6 +90,7 @@ texinfo
 torbrowser-launcher
 transmission-cli
 transmission-gtk
+tree
 ueberzug
 unzip
 virtualbox
