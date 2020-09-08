@@ -46,7 +46,28 @@ let g:gruvbox_material_transparent_background=1
 
 colorscheme gruvbox-material
 
-let g:lightline = {}
+let g:lightline = {
+            \ 'component': {
+            \   'lineinfo': ' %3l:%-2v',
+            \ },
+            \ 'component_function': {
+            \   'readonly': 'LightlineReadonly',
+            \   'fugitive': 'LightlineFugitive'
+            \ },
+            \ 'separator': { 'left': '', 'right': '' },
+            \ 'subseparator': { 'left': '', 'right': '' }
+            \ }
+function! LightlineReadonly()
+    return &readonly ? '' : ''
+endfunction
+function! LightlineFugitive()
+    if exists('*FugitiveHead')
+        let branch = FugitiveHead()
+        return branch !=# '' ? ''.branch : ''
+    endif
+    return ''
+endfunction
+
 let g:lightline.colorscheme = 'gruvbox_material'
 
 

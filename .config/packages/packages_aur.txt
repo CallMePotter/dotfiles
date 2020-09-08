@@ -1,5 +1,4 @@
 autotiling
-gotop
 nerd-fonts-ubuntu-mono
 pip-tools
 platformio
