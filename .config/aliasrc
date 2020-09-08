@@ -18,7 +18,7 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 # suckless
 alias strc='nvim ~/.config/st/config.def.h'
 alias dwmrc='nvim ~/.config/dwm/config.def.h'
-alias xinitrc='nvim ~/.config/polybar/config.ini'
+alias xinitrc='nvim ~/.xinitrc'
 
 # neovim
 alias nvimrc='nvim ~/.config/nvim/init.vim'
@@ -29,5 +29,5 @@ alias polybarrc='nvim ~/.config/polybar/config.ini'
 
 # zsh
 alias zshrc='nvim ~/.config/zsh/.zshrc'
-alias aliases='nvim ~/.config/aliasrc'
+alias aliasrc='nvim ~/.config/aliasrc'
 alias zshenv='nvim ~/.config/env'
