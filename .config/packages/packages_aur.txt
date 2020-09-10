@@ -1,6 +1,5 @@
 autotiling
 libxft-bgra-git
-nerd-fonts-ubuntu-mono
 pip-tools
 platformio
 polybar

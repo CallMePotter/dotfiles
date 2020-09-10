@@ -72,6 +72,7 @@ os-prober
 pacgraph
 pacman
 pacman-contrib
+pamixer
 patch
 pavucontrol
 picom
@@ -133,6 +134,7 @@ xorg-xlsatoms
 xorg-xlsclients
 xorg-xpr
 xorg-xrefresh
+xorg-xsetroot
 xorg-xvinfo
 xorg-xwd
 xorg-xwininfo
