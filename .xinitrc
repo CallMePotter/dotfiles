@@ -8,4 +8,4 @@ blur &
 monitors &
 wallpaper &
 
-exec startdwm
+/* exec startdwm */
