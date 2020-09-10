@@ -57,7 +57,7 @@ if [ ! -h $HOME/.xsession-errors ]; then
  ln -s /dev/null $HOME/.xsession-errors
 fi
 
-/opt/shell-color-scripts/colorscript.sh -r
+colorscript -r
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
