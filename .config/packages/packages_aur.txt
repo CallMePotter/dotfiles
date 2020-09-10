@@ -1,8 +1,10 @@
 autotiling
+gotop-bin
 libxft-bgra-git
 pip-tools
 platformio
 polybar
 shell-color-scripts
 steam-fonts
+ttf-symbola
 yay
