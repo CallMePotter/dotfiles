@@ -1,0 +1,6 @@
+#!/bin/sh
+
+while true; do
+   xsetroot -name "$(dt) $(tm)  It's $(weather)"
+   sleep 1m    # Update time every minute
+done &

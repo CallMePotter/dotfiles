@@ -1,4 +1,4 @@
 #!/bin/sh
 
-pacman -Qqen > .config/packages/packages.txt
-pacman -Qqem > .config/packages/packages_aur.txt
+pacman -Qqen > .config/packages/packages.txt &
+pacman -Qqem > .config/packages/packages_aur.txt &
