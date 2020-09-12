@@ -2,5 +2,5 @@
 
 while true; do
     xsetroot -name " $(dt) $(tm) | $(weather) "
-    sleep 1m
+    sleep 30
 done &
