@@ -1,4 +1,3 @@
-alacritty
 amd-ucode
 arandr
 archivetools
@@ -72,6 +71,7 @@ os-prober
 pacgraph
 pacman
 pacman-contrib
+pamixer
 patch
 pavucontrol
 picom
