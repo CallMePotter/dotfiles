@@ -63,7 +63,7 @@ floating_modifier $mod
 ##########################################
 
 bindsym $mod+w exec firefox
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id rofi -show run
 bindsym $mod+shift+p exec ~/.config/polybar/launch.sh
 bindsym $mod+Return exec st
 bindsym $mod+Shift+e exec ~/.config/i3/menu.sh

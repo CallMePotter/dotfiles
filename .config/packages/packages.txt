@@ -80,6 +80,7 @@ portmidi
 python-pygame
 ranger
 renameutils
+rofi
 rxvt-unicode
 sed
 steam
