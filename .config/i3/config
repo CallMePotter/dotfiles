@@ -9,7 +9,7 @@ exec source ~/.zshenv
 ##########################################
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #606060 #000000 #000000 #606060    #606060
+client.focused          #005577 #000000 #000000 #005577    #005577
 client.focused_inactive #101010  #101010 #101010 #101010   #101010
 client.unfocused        #101010 #101010 #101010 #101010   #101010
 client.urgent           #101010 #101010 #101010 #101010   #101010
@@ -32,7 +32,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 hide_edge_borders both
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 gaps inner 3
 gaps outer 3
 
