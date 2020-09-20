@@ -8,12 +8,15 @@ exec source ~/.zshenv
 #                                        #
 ##########################################
 
+set $abc #cccccc
+set $ibc #444444
+
 # class                 border  backgr. text    indicator child_border
-client.focused          #005577 #000000 #000000 #005577    #005577
-client.focused_inactive #444444  #444444 #444444 #444444   #444444
-client.unfocused        #444444 #444444 #444444 #444444   #444444
-client.urgent           #444444 #444444 #444444 #444444   #444444
-client.placeholder      #444444 #444444 #444444 #444444   #444444
+client.focused          $abc    $abc    $abc    $abc      $abc
+client.focused_inactive $ibc    $ibc    $ibc    $ibc      $ibc
+client.unfocused        $ibc    $ibc    $ibc    $ibc      $ibc
+client.urgent           $ibc    $ibc    $ibc    $ibc      $ibc
+client.placeholder      $ibc    $ibc    $ibc    $ibc      $ibc
 
 client.background       #ffffff
 
