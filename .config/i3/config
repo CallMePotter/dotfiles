@@ -10,10 +10,10 @@ exec source ~/.zshenv
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #005577 #000000 #000000 #005577    #005577
-client.focused_inactive #101010  #101010 #101010 #101010   #101010
-client.unfocused        #101010 #101010 #101010 #101010   #101010
-client.urgent           #101010 #101010 #101010 #101010   #101010
-client.placeholder      #101010 #101010 #101010 #101010   #101010
+client.focused_inactive #444444  #444444 #444444 #444444   #444444
+client.unfocused        #444444 #444444 #444444 #444444   #444444
+client.urgent           #444444 #444444 #444444 #444444   #444444
+client.placeholder      #444444 #444444 #444444 #444444   #444444
 
 client.background       #ffffff
 
