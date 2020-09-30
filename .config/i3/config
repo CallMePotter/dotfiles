@@ -8,7 +8,7 @@ exec source ~/.zshenv
 #                                        #
 ##########################################
 
-set $abc #4D567A
+set $abc #4A874A
 set $ibc #444444
 
 # class                 border  backgr. text    indicator child_border
