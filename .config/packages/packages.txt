@@ -49,6 +49,7 @@ linux-headers
 linux-lts
 linux-lts-headers
 lxappearance
+lxqt-policykit
 lynx
 m4
 make

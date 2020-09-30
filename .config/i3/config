@@ -156,3 +156,4 @@ exec --no-startup-id picom --experimental-backends
 exec --no-startup-id pacman -Qqen > .config/packages/packages.txt
 exec --no-startup-id pacman -Qqem > .config/packages/packages_aur.txt
 exec --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id lxqt-policykit-agent
