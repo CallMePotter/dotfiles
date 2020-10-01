@@ -141,6 +141,7 @@ assign [class="mpv"] $ws10
 for_window [class="TelegramDesktop"] floating enable
 for_window [class="Tor Browser"] floating enable
 for_window [class="Steam"] floating enable
+for_window [class="feh"] floating enable
 
 ##########################################
 #                                        #
