@@ -40,6 +40,7 @@ hardinfo
 htop
 i3-gaps
 jq
+jre-openjdk
 jre8-openjdk
 jre8-openjdk-headless
 libpng12
@@ -140,7 +141,6 @@ xorg-xvinfo
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
-xterm
 youtube-dl
 zsh
 zsh-syntax-highlighting

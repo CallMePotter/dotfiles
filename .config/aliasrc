@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# java
+alias helloworld='cd ~/Projects/java/helloworld/'
+
 # color
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'

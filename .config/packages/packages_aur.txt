@@ -1,5 +1,6 @@
 autotiling
 libxft-bgra-git
+nerd-fonts-mononoki
 pip-tools
 platformio
 polybar
