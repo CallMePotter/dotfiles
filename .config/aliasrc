@@ -4,7 +4,7 @@
 alias helloworld='cd ~/Projects/java/helloworld/'
 
 # color
-alias ls='ls --color=auto'
+alias ls='lsd'
 alias grep='grep --color=auto'
 alias yay='yay --color=auto'
 alias pacman='pacman --color=auto'
