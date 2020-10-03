@@ -82,8 +82,8 @@ bindsym Print exec flameshot screen -p ~/Screenshots
 set $ws1 ""
 set $ws2 ""
 set $ws3 ""
-set $ws4 "4"
-set $ws5 "5"
+set $ws4 ""
+set $ws5 ""
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -137,8 +137,11 @@ assign [class="listener"] $ws1
 assign [class="st"] $ws2
 assign [class="Steam"] $ws3
 assign [class="mpv"] $ws10
+assign [class="TelegramDesktop"] $ws4
+assign [class="Transmission-gtk"] $ws5
 
 for_window [class="TelegramDesktop"] floating enable
+for_window [class="Transmission-gtk"] floating enable
 for_window [class="Tor Browser"] floating enable
 for_window [class="Steam"] floating enable
 for_window [class="feh"] floating enable

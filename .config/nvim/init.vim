@@ -23,6 +23,8 @@ set go=a
 set mouse=a
 set nohlsearch
 set clipboard+=unnamedplus
+set ignorecase
+set smartcase
 command! W :w
 
 set tabstop=4
