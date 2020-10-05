@@ -1,6 +1,6 @@
 #!/bin/sh
 
 while true; do
-    xsetroot -name "[$(tm)]   [$(dt)]   [$(weather)]   [$(memory)] "
+    xsetroot -name "[$(tm)]   [$(dt)]   [$(weather)]   "
     sleep 30
 done &
