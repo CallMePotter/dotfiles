@@ -14,6 +14,7 @@ calc
 dhcpcd
 dialog
 dmenu
+dmidecode
 dosfstools
 fakeroot
 fbset
@@ -38,7 +39,6 @@ grub-customizer
 gzip
 hardinfo
 htop
-i3-gaps
 jq
 jre-openjdk
 jre8-openjdk
@@ -50,9 +50,9 @@ linux-headers
 linux-lts
 linux-lts-headers
 lsd
+luit
 lxappearance
 lxqt-policykit
-lynx
 m4
 make
 man-db
@@ -74,15 +74,12 @@ os-prober
 pacgraph
 pacman
 pacman-contrib
-pamixer
 patch
 pavucontrol
 picom
 pkgconf
 portmidi
-python-pygame
 ranger
-renameutils
 rofi
 rxvt-unicode
 sed
@@ -92,7 +89,6 @@ teamspeak3
 telegram-desktop
 texinfo
 torbrowser-launcher
-transmission-cli
 transmission-gtk
 tree
 ueberzug
@@ -103,14 +99,11 @@ which
 wireless_tools
 wmctrl
 wpa_supplicant
-xdo
-xdotool
 xf86-video-vesa
 xf86-video-vmware
 xorg-docs
 xorg-font-util
 xorg-iceauth
-xorg-luit
 xorg-server
 xorg-server-devel
 xorg-server-xephyr
