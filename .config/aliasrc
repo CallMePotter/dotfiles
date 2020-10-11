@@ -26,10 +26,6 @@ alias xinitrc='nvim ~/.xinitrc'
 # neovim
 alias nvimrc='nvim ~/.config/nvim/init.vim'
 
-# i3
-alias i3rc='nvim ~/.config/i3/config'
-alias polybarrc='nvim ~/.config/polybar/config.ini'
-
 # zsh
 alias zshrc='nvim ~/.config/zsh/.zshrc'
 alias aliasrc='nvim ~/.config/aliasrc'
