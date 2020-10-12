@@ -1,6 +1,6 @@
 #!/bin/sh
 
 while true; do
-    xsetroot -name "[$(bartime)] [$(bardate)] "
+    xsetroot -name "$(bardate) | $(bartime) "
     sleep 30
 done &
