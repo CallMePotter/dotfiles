@@ -8,7 +8,6 @@ if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autolo
 endif
 
 call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
-    Plug 'preservim/nerdtree'
     Plug 'sainnhe/gruvbox-material'
     Plug 'PotatoesMaster/i3-vim-syntax'
     Plug 'tpope/vim-commentary'
@@ -30,6 +29,13 @@ command! W :w
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" tabs:
+
+nnoremap <C-h> :tabprevious<CR>
+nnoremap <C-l> :tabnext<CR>
+nnoremap <silent> <A-h> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+nnoremap <silent> <A-l> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
 
 " gruvbox:
 
@@ -106,12 +112,6 @@ autocmd BufNewFile,BufRead ~/Projects/PlatformIO/*.cpp set filetype=arduino
      else
          let NERDTreeBookmarksFile = '~/.vim' . '/NERDTreeBookmarks'
      endif
-
-" Shortcutting split navigation, saving a keypress:
-	map <C-h> <C-w>h
-	map <C-j> <C-w>j
-	map <C-k> <C-w>k
-	map <C-l> <C-w>l
 
 " Compile document, be it groff/LaTeX/markdown/etc.
 	map <leader>c :w! \| !compiler <c-r>%<CR>

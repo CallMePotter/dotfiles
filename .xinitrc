@@ -4,11 +4,11 @@ xset s noblank
 
 /* exec i3 */
 
-source ~/.zshenv
+source ~/.zshenv &
 blur &
 monitors &
 wallpaper &
 bar &
 
-exec dwm
+/* exec dwm */
 exec startdwm
