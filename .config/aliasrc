@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# other
+alias sudo='doas'
+
 # java
 alias helloworld='cd ~/Projects/java/helloworld/'
 

@@ -39,6 +39,7 @@ grub-customizer
 gzip
 hardinfo
 htop
+i3-gaps
 jq
 jre-openjdk
 jre8-openjdk
@@ -69,6 +70,7 @@ nvidia
 nvidia-lts
 nvidia-settings
 nvidia-utils
+opendoas
 openssh
 os-prober
 pacgraph
