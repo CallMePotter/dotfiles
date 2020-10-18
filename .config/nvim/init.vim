@@ -17,7 +17,6 @@ call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"
     Plug 'vim-scripts/Arduino-syntax-file'
 call plug#end()
 
-set bg=light
 set go=a
 set mouse=a
 set nohlsearch
@@ -49,7 +48,7 @@ set background=dark
 " Set contrast.
 " This configuration option should be placed before `colorscheme gruvbox-material`.
 " Available values: 'hard', 'medium'(default), 'soft'
-let g:gruvbox_material_background = 'medium'
+let g:gruvbox_material_background = 'hard'
 let g:gruvbox_material_transparent_background=1
 
 colorscheme gruvbox-material
