@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# other
-alias sudo='doas'
-
 # color
 alias ls='lsd'
 alias grep='grep --color=auto'
