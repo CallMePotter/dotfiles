@@ -4,8 +4,8 @@ xset s noblank
 
 source ~/.zshenv &
 blur &
-monitors &
 wallpaper &
+monitors &
 bar &
 
 exec dwm
