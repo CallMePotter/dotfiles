@@ -8,5 +8,5 @@ wallpaper &
 monitors &
 bar &
 
-exec dwm
-/* exec startdwm */
+/* exec dwm */
+exec startdwm
