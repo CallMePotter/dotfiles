@@ -3,6 +3,7 @@ xset -dpms
 xset s noblank
 
 source ~/.zshenv &
+flameshot &
 blur &
 wallpaper &
 monitors &
