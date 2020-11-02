@@ -58,5 +58,9 @@ fi
 
 colorscript -r
 
+precmd() {
+    printf "\033]0;%s@%s %s\007" "${USER}" "${HOST%%.*}" "${PWD/#$HOME/"~"}"
+}
+
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
