@@ -3,4 +3,4 @@
 while true; do
     xsetroot -name "$(bardate) | $(bartime) "
     sleep 30
-done &
+done
