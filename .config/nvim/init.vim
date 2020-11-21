@@ -82,7 +82,7 @@ let g:lightline.colorscheme = 'gruvbox_material'
 " Arduino:
 
 autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
-autocmd BufNewFile,BufRead ~/Projects/PlatformIO/*.cpp set filetype=arduino
+autocmd BufNewFile,BufRead ~/projects/platformio/*.cpp set filetype=arduino
 
 " Some basics:
 	nnoremap c "_c

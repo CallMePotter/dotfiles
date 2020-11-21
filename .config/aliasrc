@@ -7,13 +7,11 @@ alias yay='yay --color=auto'
 alias pacman='pacman --color=auto'
 
 # platformio
-alias tutorial='cd ~/Projects/PlatformIO/tutorial/'
-alias piodir='cd ~/Projects/PlatformIO/'
 alias piorun='pio run --target upload'
 alias piomonitor='pio device monitor'
 
 # dotfiles
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # suckless
 alias strc='nvim ~/.config/st/config.def.h'
