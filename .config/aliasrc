@@ -12,7 +12,7 @@ alias piorun='pio run --target upload'
 alias piomonitor='pio device monitor'
 
 # dotfiles
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # suckless
 alias strc='nvim ~/.config/st/config.def.h'
