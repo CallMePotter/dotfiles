@@ -5,7 +5,6 @@ alias ls='exa -al'
 alias grep='grep --color=auto'
 alias yay='yay --color=auto'
 alias pacman='pacman --color=auto'
-alias irssi="irssi --config="$XDG_CONFIG_HOME"/irssi/config --home="$XDG_DATA_HOME"/irssi"
 
 # platformio
 alias piorun='pio run --target upload'
@@ -27,4 +26,9 @@ alias zshrc='nvim ~/.config/zsh/.zshrc'
 alias aliasrc='nvim ~/.config/aliasrc'
 alias zshenv='nvim ~/.config/env'
 
+# cleanup
 alias mocp="mocp -M "$XDG_CONFIG_HOME"/moc"
+alias irssi="irssi --config="$XDG_CONFIG_HOME"/irssi/config --home="$XDG_DATA_HOME"/irssi"
+
+alias checkip="python ~/Projects/python/automation/check_ip.py"
+alias venv="source venv/bin/activate"

@@ -143,8 +143,6 @@ autocmd BufNewFile,BufRead ~/Projects/platformio/*.cpp set filetype=arduino
 	autocmd BufWritePre * %s/\s\+$//e
 	autocmd BufWritepre * %s/\n\+\%$//e
 
-" When shortcut files are updated, renew bash and ranger configs with new material:
-	autocmd BufWritePost files,directories !shortcuts
 " Run xrdb whenever Xdefaults or Xresources are updated.
 	autocmd BufWritePost *Xresources,*Xdefaults !xrdb %
 " Update binds when sxhkdrc is updated.
