@@ -56,8 +56,6 @@ if [ ! -h $HOME/.xsession-errors ]; then
  ln -s /dev/null $HOME/.xsession-errors
 fi
 
-colorscript -r
-
 precmd() {
     printf "\033]0;%s@%s %s\007" "${USER}" "${HOST%%.*}" "${PWD/#$HOME/"~"}"
 }
