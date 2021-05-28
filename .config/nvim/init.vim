@@ -8,6 +8,7 @@ if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autolo
 endif
 
 call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
+    Plug 'ghifarit53/tokyonight-vim'
     Plug 'sainnhe/gruvbox-material'
     Plug 'PotatoesMaster/i3-vim-syntax'
     Plug 'tpope/vim-commentary'
@@ -37,22 +38,15 @@ nnoremap <C-l> :tabnext<CR>
 nnoremap <silent> <A-h> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <silent> <A-l> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
 
-" gruvbox:
-
 if has('termguicolors')
     set termguicolors
 endif
 
-" For dark version.
-set background=dark
+let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_enable_italic = 1
+let g:tokyonight_transparent_background = 1
 
-" Set contrast.
-" This configuration option should be placed before `colorscheme gruvbox-material`.
-" Available values: 'hard', 'medium'(default), 'soft'
-let g:gruvbox_material_background = 'hard'
-let g:gruvbox_material_transparent_background=1
-
-colorscheme gruvbox-material
+colorscheme tokyonight
 
 let g:lightline = {
             \ 'component': {
@@ -76,13 +70,13 @@ function! LightlineFugitive()
     return ''
 endfunction
 
-let g:lightline.colorscheme = 'gruvbox_material'
+let g:lightline.colorscheme = 'tokyonight'
 
 
 " Arduino:
 
 autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
-autocmd BufNewFile,BufRead ~/Projects/platformio/*.cpp set filetype=arduino
+autocmd BufNewFile,BufRead ~/Projects/arduino/*.cpp set filetype=arduino
 
 " Some basics:
 	nnoremap c "_c
