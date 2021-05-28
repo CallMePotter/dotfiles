@@ -6,6 +6,7 @@ source ~/.zshenv &
 blur &
 wallpaper &
 monitors &
+lg &
 slstatus &
 
 /* exec dwm */
