@@ -4,10 +4,10 @@ xset s noblank
 
 source ~/.zshenv &
 blur &
-wallpaper &
-monitors &
 slstatus &
 lg &
+wallpaper &
+monitors &
 
 /* exec dwm */
 exec startdwm
