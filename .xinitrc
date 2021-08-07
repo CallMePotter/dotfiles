@@ -6,6 +6,7 @@ source ~/.zshenv &
 blur &
 slstatus &
 lg &
+sleep 1
 wallpaper &
 monitors &
 

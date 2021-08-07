@@ -16,6 +16,7 @@ call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"
     Plug 'itchyny/lightline.vim'
     Plug 'sheerun/vim-polyglot'
     Plug 'vim-scripts/Arduino-syntax-file'
+    " Plug 'sophacles/vim-processing'
 call plug#end()
 
 set go=a
