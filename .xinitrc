@@ -3,7 +3,7 @@ xset -dpms
 xset s noblank
 
 source ~/.zshenv &
-exec bspwm
+# exec bspwm
 
 blur &
 slstatus &
