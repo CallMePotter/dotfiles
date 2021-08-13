@@ -852,31 +852,61 @@ background_opacity: 0.9
   #print_events: false
 
 # Colors (Adventure)
+# colors:
+#   bright:
+#     black: '#685656'
+#     blue: '#97d7ef'
+#     cyan: '#bdcfe5'
+#     green: '#99b52c'
+#     magenta: '#aa7900'
+#     red: '#d76b42'
+#     white: '#e4d5c7'
+#     yellow: '#ffb670'
+#   cursor:
+#     cursor: '#feffff'
+#     text: '#000000'
+#   normal:
+#     black: '#040404'
+#     blue: '#417ab3'
+#     cyan: '#bdcfe5'
+#     green: '#5da602'
+#     magenta: '#e5c499'
+#     red: '#d84a33'
+#     white: '#dbded8'
+#     yellow: '#eebb6e'
+#   primary:
+#     background: '#040404'
+#     foreground: '#feffff'
+#   selection:
+#     background: '#606060'
+#     text: '#ffffff'
+
+# Colors (Gruvbox Dark)
 colors:
   bright:
-    black: '#685656'
-    blue: '#97d7ef'
-    cyan: '#bdcfe5'
-    green: '#99b52c'
-    magenta: '#aa7900'
-    red: '#d76b42'
-    white: '#e4d5c7'
-    yellow: '#ffb670'
+    black: '#7f7061'
+    blue: '#719586'
+    cyan: '#7db669'
+    green: '#aab01e'
+    magenta: '#c77089'
+    red: '#f73028'
+    white: '#e6d4a3'
+    yellow: '#f7b125'
   cursor:
-    cursor: '#feffff'
-    text: '#000000'
+    cursor: '#e6d4a3'
+    text: '#1e1e1e'
   normal:
-    black: '#040404'
-    blue: '#417ab3'
-    cyan: '#bdcfe5'
-    green: '#5da602'
-    magenta: '#e5c499'
-    red: '#d84a33'
-    white: '#dbded8'
-    yellow: '#eebb6e'
+    black: '#1e1e1e'
+    blue: '#377375'
+    cyan: '#578e57'
+    green: '#868715'
+    magenta: '#a04b73'
+    red: '#be0f17'
+    white: '#978771'
+    yellow: '#cc881a'
   primary:
-    background: '#040404'
-    foreground: '#feffff'
+    background: '#1e1e1e'
+    foreground: '#e6d4a3'
   selection:
-    background: '#606060'
-    text: '#ffffff'
+    background: '#e6d4a3'
+    text: '#534a42'
