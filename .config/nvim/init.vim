@@ -43,11 +43,15 @@ if has('termguicolors')
     set termguicolors
 endif
 
-let g:tokyonight_style = 'night' " available: night, storm
-let g:tokyonight_enable_italic = 1
-let g:tokyonight_transparent_background = 1
+" For dark version.
+set background=dark
 
-colorscheme tokyonight
+" Set contrast.
+" This configuration option should be placed before `colorscheme gruvbox-material`.
+" Available values: 'hard', 'medium'(default), 'soft'
+let g:gruvbox_material_background = 'hard'
+
+colorscheme gruvbox-material
 
 let g:lightline = {
             \ 'component': {
@@ -71,7 +75,7 @@ function! LightlineFugitive()
     return ''
 endfunction
 
-let g:lightline.colorscheme = 'tokyonight'
+let g:lightline.colorscheme = 'gruvbox-material'
 
 
 " Arduino:
