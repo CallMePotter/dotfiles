@@ -25,3 +25,4 @@ $HOME/.config/polybar/launch.sh --blocks
 wallpaper &
 blur &
 lg &
+fc-cache -fv &
