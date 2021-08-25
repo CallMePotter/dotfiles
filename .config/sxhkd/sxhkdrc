@@ -10,6 +10,10 @@ super + Return
 super + @space
     rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/rofi/config.rasi
 
+# browser
+super + w
+    librewolf
+
 # screenshot program
 Print
     flameshot gui
@@ -37,8 +41,6 @@ super + Escape
 
 #
 # bspwm hotkeys
-super + w
-    librewolf
 #
 
 # quit/restart bspwm
