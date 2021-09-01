@@ -2,11 +2,11 @@
 
 export EDITOR=nvim
 
-# Add ~/.local/bin to $PATH
+# add ~/.local/bin to $PATH
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.local/scripts
 
-# ~/ clean-up:
+# cleanup:
 export ZDOTDIR=$HOME/.config/zsh
 
 export XDG_DATA_HOME="$HOME/.local/share"
@@ -22,9 +22,13 @@ export CUDA_CACHE_PATH="$XDG_CACHE_HOME/nv"
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 export LESSKEY="$XDG_CONFIG_HOME/less/lesskey"
 
-# Java
+# java
 # export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
 # export _JAVA_AWT_WM_NONREPARENTING=1
 
-# Sudo
+# firefox
+export MOZ_DISABLE_RDD_SANDBOX=1
+export MOZ_X11_EGL=1
+
+# sudo
 export SUDO_ASKPASS="/bin/lxsession"

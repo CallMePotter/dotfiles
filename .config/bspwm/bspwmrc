@@ -15,8 +15,6 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Gimp state=floating center=true
-bspc rule -a LibreWolf
-bspc rule -a mpv
 bspc rule -a TelegramDesktop state=floating center=true
 bspc rule -a Transmission-gtk state=floating center=true
 bspc rule -a Tor\ Browser state=floating center=true
@@ -25,5 +23,5 @@ $HOME/.config/polybar/launch.sh --blocks
 wallpaper &
 blur &
 lg &
-xss-lock -- betterlockscreen -l &
+lock &
 fc-cache -fv &
