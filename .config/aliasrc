@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# color
+alias ls='exa -al'
+alias grep='grep --color=auto'
+
+# platformio
+alias piorun='pio run --target upload'
+alias piomonitor='pio device monitor'
+
+# dotfiles
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# cleanup
+alias mocp="mocp -M "$XDG_CONFIG_HOME"/moc"
+alias irssi="irssi --config="$XDG_CONFIG_HOME"/irssi/config --home="$XDG_DATA_HOME"/irssi"
+
+# python
+alias venv="source venv/bin/activate"
