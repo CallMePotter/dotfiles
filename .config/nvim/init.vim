@@ -8,8 +8,7 @@ if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autolo
 endif
 
 call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
-    Plug 'ghifarit53/tokyonight-vim'
-    Plug 'sainnhe/gruvbox-material'
+    Plug 'arcticicestudio/nord-vim'
     Plug 'PotatoesMaster/i3-vim-syntax'
     Plug 'tpope/vim-commentary'
     Plug 'ap/vim-css-color'
@@ -49,16 +48,14 @@ set background=dark
 " Set contrast.
 " This configuration option should be placed before `colorscheme gruvbox-material`.
 " Available values: 'hard', 'medium'(default), 'soft'
-let g:gruvbox_material_background = 'hard'
-let g:gruvbox_material_transparent_background = 1
 
-colorscheme gruvbox-material
+colorscheme nord
 
 let g:lightline = {
             \ 'component': {
             \   'lineinfo': ' %3l:%-2v',
             \ },
-            \ 'colorscheme' : 'gruvbox_material',
+            \ 'colorscheme' : 'nord',
             \ 'component_function': {
             \   'readonly': 'LightlineReadonly',
             \   'fugitive': 'LightlineFugitive'
